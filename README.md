@@ -32,10 +32,10 @@ A simple task management system implemented in Java using Data Structures and Al
 
 ## 📸 Screenshot
 
-<img src="CREATE TASK.PNG" alt="CREATE" style="width:300px; height:200px; object-fit: cover;" />
-<img src="READ TASK.PNG" alt="READ" style="width:300px; height:200px; object-fit: cover;" />
-<img src="UPDATE TASK.PNG" alt="UPDATE" style="width:300px; height:200px; object-fit: cover;" />
-<img src="DELETE TASK.PNG" alt="DELETE" style="width:300px; height:200px; object-fit: cover;" />
+<img src="CREATE TASK.png" alt="CREATE" style="width:300px; height:200px; object-fit: cover;" />
+<img src="READ TASK.png" alt="READ" style="width:300px; height:200px; object-fit: cover;" />
+<img src="UPDATE TASK.png" alt="UPDATE" style="width:300px; height:200px; object-fit: cover;" />
+<img src="DELETE TASK.png" alt="DELETE" style="width:300px; height:200px; object-fit: cover;" />
 
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
