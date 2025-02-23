@@ -1,2 +1,49 @@
 # TaskManager-DSA
-A simple task management system using java and DSA
+
+A simple task management system implemented in Java using Data Structures and Algorithms (DSA).
+
+## Features
+- Add, remove, and update tasks
+- Mark tasks as completed
+- View tasks in a structured manner
+- Implemented using fundamental DSA concepts
+
+## Technologies Used
+- Java
+- Data Structures & Algorithms (DSA)
+- Visual Studio Code
+- GitHub for collaboration
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/TaskManager-DSA.git
+   ```
+2. Open the project in Visual Studio Code.
+3. Compile and run the program:
+   ```bash
+   javac TaskManager.java
+   java TaskManager
+   ```
+
+## Usage
+- Run the program and follow the menu options to manage tasks.
+- Tasks are stored in an appropriate data structure for quick access and retrieval.
+
+## Screenshot
+![TaskManager Screenshot](CREATE TASK.PNG)
+![TaskManager Screenshot](READ TASK.PNG)
+![TaskManager Screenshot](UPDATE TASK.PNG)
+![TaskManager Screenshot](DELETE TASK.PNG)
+
+## Contributing
+Contributions are welcome! Follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+## License
+This project is open-source and available under the MIT License.
+
