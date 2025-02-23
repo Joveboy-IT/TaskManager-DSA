@@ -5,12 +5,14 @@ class Task {
     private String title;
     private int priority;
     private String deadline;
+    private String status; // **Added status attribute**
     
     // Constructor to initialize task attributes
-    public Task(String title, int priority, String deadline) {
+    public Task(String title, int priority, String deadline, String status) {
         this.title = title;
         this.priority = priority;
         this.deadline = deadline;
+        this.status = status; // **Newly added field for task status**
     }
     
     // Getter method for task title
@@ -28,10 +30,20 @@ class Task {
         return deadline;
     }
     
+    // Getter method for task status
+    public String getStatus() {
+        return status;
+    }
+    
+    // Setter method for updating status
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
     // Override toString method to display task details
     @Override
     public String toString() {
-        return "Task: " + title + " | Priority: " + priority + " | Deadline: " + deadline;
+        return "Task: " + title + " | Priority: " + priority + " | Deadline: " + deadline + " | Status: " + status;
     }
 }
 
@@ -44,9 +56,10 @@ public class TaskManager {
         tasks = new ArrayList<>(); // Using ArrayList as a dynamic array (DSA: List)
     }
     
-    // Method to add a new task
-    public void addTask(String title, int priority, String deadline) {
-        tasks.add(new Task(title, priority, deadline)); // Adding elements to a list (O(1) complexity)
+    // **Fixed saving task functionality**
+    public void addTask(String title, int priority, String deadline, String status) {
+        Task newTask = new Task(title, priority, deadline, status);
+        tasks.add(newTask); // **Ensuring the task is correctly added**
         System.out.println("Task added successfully.");
     }
     
@@ -64,12 +77,12 @@ public class TaskManager {
     }
     
     // Method to update an existing task
-    public void updateTask(int index, String newTitle, int newPriority, String newDeadline) {
+    public void updateTask(int index, String newTitle, int newPriority, String newDeadline, String newStatus) {
         if (index < 1 || index > tasks.size()) {
             System.out.println("Invalid task number.");
             return;
         }
-        tasks.set(index - 1, new Task(newTitle, newPriority, newDeadline)); // Updating an element in ArrayList (O(1) complexity)
+        tasks.set(index - 1, new Task(newTitle, newPriority, newDeadline, newStatus)); // **Updating an element in ArrayList (O(1) complexity)**
         System.out.println("Task updated successfully.");
     }
     
@@ -109,7 +122,9 @@ public class TaskManager {
                     scanner.nextLine(); // Consume newline
                     System.out.print("Enter deadline (YYYY-MM-DD): ");
                     String deadline = scanner.nextLine();
-                    manager.addTask(title, priority, deadline);
+                    System.out.print("Enter status (Pending/In Progress/Completed): ");
+                    String status = scanner.nextLine();
+                    manager.addTask(title, priority, deadline, status);
                     break;
                 case 2:
                     // List tasks
@@ -127,7 +142,9 @@ public class TaskManager {
                     scanner.nextLine();
                     System.out.print("Enter new deadline (YYYY-MM-DD): ");
                     String newDeadline = scanner.nextLine();
-                    manager.updateTask(taskNum, newTitle, newPriority, newDeadline);
+                    System.out.print("Enter new status (Pending/In Progress/Completed): ");
+                    String newStatus = scanner.nextLine();
+                    manager.updateTask(taskNum, newTitle, newPriority, newDeadline, newStatus);
                     break;
                 case 4:
                     // Delete a task
