@@ -36,6 +36,7 @@ A simple task management system implemented in Java using Data Structures and Al
 <img src="READ TASK.png" alt="READ" style="width:300px; height:200px; object-fit: cover;" />
 <img src="UPDATE TASK.png" alt="UPDATE" style="width:300px; height:200px; object-fit: cover;" />
 <img src="DELETE TASK.png" alt="DELETE" style="width:300px; height:200px; object-fit: cover;" />
+<img src="CRUD-GUI.png" alt="CRUD" style="width:300px; height:200px; object-fit: cover;" />
 
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
